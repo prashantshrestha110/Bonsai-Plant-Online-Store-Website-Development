@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Unique Bajracharya, Murari Pathak, Prashant Shrestha, Mohammad Mubarak, Grenija Dangol">
+	<meta name="description" content="About Bonsai Plant">
+	<meta name="keyword" content="Bonsai Plant">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+		.form11{
+			margin: auto;
+			width: 40%;
+		}
+		.form11 div ul{
+			padding: 10px;
+			list-style-type: none;
+		}
+		div{
+			color: #fff;
+		}
+		.text-box1{
+			text-align: center;
+			padding-top: 20px;
+			margin-bottom: 2px;
+		}
+
+		
+	</style> 
+</head>
+</head>
+<body>
+	<section class="header" style="min-height: 100vh;">
+	    <section>
+			<nav>
+				<a href="../index.html"><img src="../images/Bonsailet.png" alt="Bonsailet Logo"></a>
+				<div class="nav-links">
+					<ul>
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="../pages/products.html">PRODUCTS</a></li>
+						<li><a href="../pages/Blog.html">BLOG</a></li>
+						<li><a href="../pages/about.html">ABOUT</a></li>
+						<li><a href="../pages/contact.html">CONTACT</a></li>
+						<li><a href="../pages/research.html">RESEARCH</a></li>
+					</ul>
+				</div>
+				<div>
+					<form>
+	                    <input type="text" placeholder="Search...">
+	                    <button type="submit">Go</button>
+	                </form>
+				</div>	
+			</nav>
+		</section>
+		<section>
+			<div class="text-box1">
+				<h1>If you have any questions send us a note</h1>
+			</div>
+	    </section>
+		<!---------------------forms----------------------->
+	    <section class="form11">
+			    <form name="messageForm" onsubmit="validateForm()" style="display: block;">
+	                <label>Name:</label>
+	                <input type="text" name="name">
+	                <br>
+
+		    		<label>Email:</label>
+		    		<input type="text" name="email">
+		    		<br>
+	                
+	                <label style="font-size: 20px;">I have a delivery question about my order:</label>
+	                <ul>
+	                 	<li>
+	          	         	<input type="radio" name="options" value="option1">
+	                        <label>I did not receive my order</label>
+	                	</li>
+	                 	<li>
+	                   		<input type="radio" name="options" value="option2">
+	                        <label>I only received part of my order</label>
+	                   	</li>
+	                   	<li>
+	                		<input type="radio" name="options" value="option3">
+	                        <label>My order is incorrect or arrived damaged</label>
+	                    </li>
+	                   	<li>
+	                 		<input type="radio" name="options" value="option4">
+	                        <label>Cancel my order</label>
+	                   	</li>
+	                   	<li>
+	                  		<input type="radio" name="options" value="option5">
+	                        <label>Change my shipping address</label>
+	                   	</li>
+	                </ul>  
+	                <br>
+	                     
+	                <label>What plants or products had issues?</label>
+	                <input type="text" name="plantsName">
+	                <br>
+
+			        <label>Message:</label><br> 
+	                <textarea type="textarea" size=100 name="message" placeholder="enter your messages.."></textarea>
+	                <br>
+
+			   
+		    		<button type="submit" value="Submit button">submit</button>
+
+			   	</form>
+		</section>
+		<!---------------internal java script----------------->
+		<script type="text/javascript">
+	    	function validateForm()
+	    	{
+	    		var name = document.forms["messageForm"]["name"].value;
+	    		alert(name);
+
+	    		var email = document.forms["messageForm"]["email"].value;
+	    	
+
+	    		var question = document.forms["messageForm"]["options"].value;
+
+	    		var plants = document.forms["messageForm"]["plantsName"].value;
+
+	    		var messageDetails = document.forms["messageForm"]["message"].value;
+
+
+	    		if (name == "" || email == "" || messageDetails == "")
+	            {
+	            	alert("Empty fields are present!!! Please enter the values...");
+	            }
+	            else
+	            {
+	            	alert("Thank you for your feedback!!!");
+	            }
+	    		
+	    	}
+	    </script>
+	    <!-------------------------footer------------------------------------>
+		<section>
+			<footer>
+				<section style="display: inline-flex; text-align: center; margin-bottom: 20px;">
+					<div class="fot">
+					    <h3>SECURE PAYMENT</h3>
+					    <p>100% Secure Payment</p>
+				    </div>
+				    <div class="fot">
+				    	<h3>FREE SHIPPING</h3>
+				    	<p>For Orders Above Rs. 10000</p>
+				    </div>
+				    <div class="fot">
+				    	<h3>ONLINE NURSERY</h3>
+				    	<p>Nepal's 1 Plants Shop</p>
+				    </div>
+				</section>
+				<hr>
+				<section>
+				    <p align="center"><b>&copy;2022 Bonsailet</b>. All rights reserved.</p>
+				</section>
+		    </footer>
+		</section>
+    </section>
+</body>
+</html>

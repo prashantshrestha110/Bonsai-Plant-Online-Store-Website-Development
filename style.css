@@ -1,0 +1,500 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins', sans-serif;";
+}
+/*the top part of the webpage*/
+.header{
+	min-height: 105vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 204, 153, 0.13),rgba(0, 204, 153, 0.13)),url(../images/backgroung.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+
+/*navigation bar of the website*/
+nav{
+	background-image: linear-gradient(rgba(204, 204, 204, 0.4),rgba(204, 204, 204, 0.4));
+	display: flex;
+	padding: 1% 6%;
+	justify-content: space-between;
+	align-items: centre;
+}
+nav img{
+	width: 180px;
+}
+
+.nav-links{
+	flex: 100;
+	text-align: right;
+	padding: 0px 80px;
+}
+
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 23px 15px;
+	position: relative;
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+/*hover effect of the navigation bar*/
+.nav-links ul li::after{
+	content: "";
+	width: 0%;
+	height: 3px;
+	display: block;
+	background: #f44336;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+	
+}
+.text-box{
+	position: relative;
+	color: #fff;
+	text-align: left;
+	top: 200px;
+	padding-left: 100px;
+
+}
+/****************top part of the home page*************************/
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: #fff;
+}
+.text-box a{
+	font-size: 15px;
+}
+/*************button with the hover effect************************/
+.button{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 12px 44px;
+	font-size: 13px;
+	position: relative;
+	cursor: pointer;
+}
+.button:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 0.2s;
+}
+
+
+
+/*****************contains featured plants****************/
+.top-plants{
+	min-height: 90vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+.row{
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	margin-inline: 130px;
+}
+/*************div for each plants*****************/
+
+
+.pp{
+	flex-basis: 15%;
+	background: #eededf;
+	margin-bottom: 5%;
+	box-sizing: border-box;
+	padding: 10px 0px;
+	transition: 0.5s;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid;
+	
+}
+.pp img{
+	padding: 10px 0px;
+}
+.pp:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+/******froms of the contact page*******/
+form {
+  display: flex;
+  padding-top: 3px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #5cc;
+  border-radius: 4px;
+}
+textarea[type="textarea"]{
+	width: 100%;
+  padding: 25px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #5cc;
+  border-radius: 4px;
+  margin: auto;
+
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #5cc;
+  border-radius: 4px;
+}
+/*********submit button ***********/
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+/**********image slider**********/
+.row1{
+	margin-top: 60px;
+	display: flex;
+	background-color: #eededf;
+	align-items: center;
+}
+.box {
+  width: 50%; /* both divs will take 50% of the parent container */
+  height: 80vh; /* you can set any height */
+
+}
+.box img{
+	height: 80vh;
+	width: 100%;
+}
+.box section{
+	padding: 20% 20px;
+}
+
+
+/******** reviews*************/
+.rev{
+	padding: 80px;
+	display: flex;
+	align-items: center;
+}
+.review h1{
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+.review-column{
+	border-radius: 10px;
+	background: #fff3f3;
+	cursor: pointer;
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+}
+.review-column img{
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+.review-column p{
+	margin-top: 15px;
+	text-align: left;
+
+}
+/*Call to action*/
+
+.cnt{
+	margin: 100px 150px;
+	width: 80%;
+	background-image: linear-gradient(rgba(0, 204, 153, 0.2),rgba(0, 204, 153, 0.2)),url(../images/contact1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+}
+
+/* contains copyright details */
+footer{
+	background-color: rgb(113, 135, 126);
+	color: #fff;
+}
+.fot{
+	padding-left: 240px;
+}
+
+/**external productpage**/
+
+
+
+.product-sec{
+	background-color: #eededf;
+}
+.productext{
+	padding-top: 60px;
+	display: flex;
+	align-items: center;
+}
+.product-div {
+  width: 50%; /* both divs will take 50% of the parent container */
+  height: 80vh; /* you can set any height */
+
+}
+.product-div img{
+	height: 80vh;
+	width: 100%;
+}
+.product-div section{
+	padding: 30px;
+}
+
+.discription{
+	padding: 50px 30px;
+
+}
+.dis{
+	cursor: pointer;
+  width: 10%;
+}
+.product-div section a{
+  margin: 30px 0px;
+}
+
+ 
+/****************About US************************/
+
+.members{
+	flex-basis: 19%;
+	padding-top: 5px;
+	padding-bottom: 50px;
+	background-color: #eededf;
+	text-align: center;
+	margin-bottom: 5%;
+	border-radius: 5px;
+
+}
+.members img{
+	margin-bottom: 50px;
+	border-radius: 50%;
+}
+.vision h2, .vision p{
+	padding: 20px;
+	font-size: 20px;
+
+}
+.vision{
+	background-image: linear-gradient(rgba(211, 228, 229, 0.9),rgba(211, 228, 229, 0.9)),url(../images/pro1.jfif);
+}
+
+/*********************protfoilo******************************/
+
+.main-details{
+	border: 1px solid;
+	margin: 20px 200px 20px 200px;
+	padding: 50px;
+}
+.pro{
+	margin: 5px 50px;
+	display: flex;
+}
+.pro img{
+	padding: 5px;
+	padding-inline: 20px;
+}
+
+.details{
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+.details1, .details2{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 35%;
+}
+
+.details1{
+	background-color: #eededf;
+	padding: 5px 10px;
+	margin-right: 20px;
+}
+.details2{
+	padding-left: 50px;
+}
+table{
+	background-color: black;
+	margin-top: 10px;
+}
+th, td{
+	background-color: white;
+	padding: 5px 10px;
+}
+
+
+
+/****************blog page********************/
+.blog1{
+	background-image: linear-gradient(rgba(211, 228, 229, 0.7),rgba(211, 228, 229, 0.7)),url(../images/tech.jfif);
+	width: 80%;
+	height: 400px;
+	background-size: cover;
+	border-radius: 10px;
+	margin: 30px;
+	
+}
+.blog1-text h1{
+	padding-left: 30px;
+	text-align: left;
+	padding-top: 80px;
+	font-size: 60px;
+}
+.blog2{
+	display: flex;
+	margin-bottom: 30px;
+
+}
+.blog2-1{
+	border: 1px solid;
+	flex-basis: 50%;
+	margin-left: 130px;
+	background-color: #d3dbdc;
+	border-radius: 10px;
+	padding: 10px;
+	padding-left: 20px;
+}
+.blog2-2{
+	flex-basis: 20%;
+	margin-left: 150px;
+	background-color: #eededf;
+	border-radius: 10px;
+	border: 1px solid;
+
+}
+.blog3{
+	margin-bottom: 20px;
+	background-color: #d3dbdc;
+	display: flex;
+	width: 82%;
+	border-radius: 10px;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	border: 1px solid;
+}
+.blog3-1{
+	width: 50%; 
+  height: 70vh;
+}
+.blog3-1 img{
+	border-radius: 10px;
+	height: 70vh;
+	width: 100%;
+}
+.blog3-2{
+	width: 50%;
+
+}
+
+.blog4{
+	background-color: #d3dbdc;
+	display: flex;
+	width: 82%;
+	border-radius: 10px;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid;
+	
+}
+.blog4-1{
+	width: 50%; 
+  height: 60vh;
+}
+.blog4-1 img{
+	border-radius: 10px;
+	height: 60vh;
+	width: 100%;
+}
+.blog4-2{
+	width: 50%;
+	padding-left: 20px;
+
+}
+.blog5{
+	margin-bottom: 20px;
+	background-color: #d3dbdc;
+	width: 82%;
+	border-radius: 10px;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid;
+}
+
+/**************research page*************/
+.research{
+	background-color: #eededf;
+	border: 1px solid;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.research1{
+	border-radius: 5px;
+	margin: 30px;
+	padding: 10px;
+	background-color: #d3dbdc;
+	margin-bottom: 50px;
+	margin-inline: 110px;
+}
+.re-image1{
+	display: flex;
+}
+.re-image1 div{
+	padding: 0px 5px;
+}
+.re-image1 div img{
+	border: 3px solid;
+}
+.research1 p{
+	padding-inline: 60px;
+}
